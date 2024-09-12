@@ -80,7 +80,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
         .finally(() => {
             setIsLoading(false)
         })
-    }, [])
+    }, [currentUser, dateRange, listing, loginModal, router, totalPrice])
 
     useEffect(() => {
         if (dateRange.startDate && dateRange.endDate) {
